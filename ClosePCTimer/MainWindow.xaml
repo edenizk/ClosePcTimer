@@ -1,0 +1,20 @@
+﻿<Window x:Class="ClosePCTimer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClosePCTimer"
+        mc:Ignorable="d"
+        Title="Timer" Height="225.1" Width="150" ResizeMode="NoResize" Icon="baseline_timer_black_18dp.ico">
+    <Grid>
+        <Label Content="ShutDown Timer" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label Content="Min :" HorizontalAlignment="Left" Margin="0, 33, 0, 0"></Label>
+        <TextBox Name="txtMin" PreviewTextInput="NumberValidationTextBox" HorizontalAlignment="Center" Height="20" Margin="34,38,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="87"/>
+        <RadioButton Name="rbShutDown" IsChecked="True" HorizontalAlignment="Center" Content="ShutDown" Margin="0,65,0,0" Checked="RbShutDown_Checked" Width="77"></RadioButton>
+        <RadioButton Name="rbRestart" Content="Restart" HorizontalAlignment="Center" Margin="0,80,0,0" Checked="RbRestart_Checked" Width="76"></RadioButton>
+        <Button Name="btnOk" Content="Start" HorizontalAlignment="Center" Margin="0,103,0,0" VerticalAlignment="Top" Width="76" Click="BtnOk_Click"/>
+        <Button Name="btnCancel" Content="Cancel" HorizontalAlignment="Center" Margin="0,128,0,0" VerticalAlignment="Top" Width="76" Click="BtnCancel_Click"/>
+        <Button Name="btnTime" Content="Time Left" HorizontalAlignment="Center" Margin="0,153,0,0" VerticalAlignment="Top" Width="76" Click="BtnTime_Click" RenderTransformOrigin="0.487,2.025"/>
+
+    </Grid>
+</Window>
